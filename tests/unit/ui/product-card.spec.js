@@ -128,4 +128,18 @@ describe('Tarjeta de producto', () => {
             getByTestId(document.body, 'discount');
         }).toThrowError(TestingLibraryElementError)
     });
+
+    test('Deberia tener la descripcion del producto', async () => {
+        const html = renderProduct({
+            name: 'Placard',
+            type: 'home',
+            price: 100,
+            description: 'ejemplo',
+        });
+        document.body.innerHTML = html;
+
+        expect(getByText(document.body, 'ejemplo')).toBeVisible();
+    });
+
+
 });
