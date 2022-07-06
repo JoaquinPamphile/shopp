@@ -39,3 +39,8 @@ Performance inicial: 87% / Performance final: 100%
 Accessibility inicial: 91% / Accessibility final: 100%
 Best Practices inicial: 83% / Best Practices final: 100%
 SEO inicial: 92% / SEO final: 92%
+
+## [1.1.1] - 2022-07-05
+
+### Added
+Test unitarios y e2e
